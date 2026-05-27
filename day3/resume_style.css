@@ -1,0 +1,378 @@
+/* =============================================
+   resume_style.css
+   ============================================= */
+
+/* === Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif;
+  background-color: #f0f0f0;
+  color: #1a1a1a;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* === Page Wrapper === */
+.page-wrapper {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 0 16px 60px;
+}
+
+/* === Resume Card === */
+.resume-card {
+  background-color: #ffffff;
+  padding: 50px 56px 56px;
+}
+
+/* =============================================
+   HEADER
+   ============================================= */
+header.resume-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.header-left h1 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #111;
+  letter-spacing: -0.5px;
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 18px;
+}
+
+.contact-info span {
+  font-size: 13px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.contact-info .icon {
+  font-size: 13px;
+}
+
+.profile-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  margin-left: 24px;
+}
+
+/* 구분선 */
+.divider {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin-bottom: 0;
+}
+
+/* =============================================
+   SECTION 공통
+   ============================================= */
+section.resume-section {
+  padding: 32px 0;
+  border-bottom: 1px solid #eee;
+}
+
+section.resume-section:last-child {
+  border-bottom: none;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.section-title::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 20px;
+  background-color: #111;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+/* =============================================
+   INTRODUCE
+   ============================================= */
+.introduce-text {
+  color: #444;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* =============================================
+   SKILLS
+   ============================================= */
+.skills-group {
+  display: flex;
+  gap: 0;
+  margin-bottom: 12px;
+  align-items: flex-start;
+}
+
+.skills-group:last-child {
+  margin-bottom: 0;
+}
+
+.skills-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #888;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  width: 110px;
+  flex-shrink: 0;
+  padding-top: 5px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 4px 12px;
+  background-color: #eef0f8;
+  color: #333;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* =============================================
+   EXPERIENCE
+   ============================================= */
+.exp-item {
+  margin-bottom: 28px;
+}
+
+.exp-item:last-child {
+  margin-bottom: 0;
+}
+
+.exp-company-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 2px;
+}
+
+.exp-company {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111;
+}
+
+.exp-date-main {
+  font-size: 12px;
+  color: #888;
+}
+
+.exp-role-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.exp-role {
+  font-size: 13px;
+  font-weight: 600;
+  color: #444;
+}
+
+.exp-badge {
+  font-size: 11px;
+  padding: 2px 8px;
+  background-color: #f0f0f0;
+  color: #666;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.project-block {
+  margin-bottom: 14px;
+  padding-left: 4px;
+}
+
+.project-block:last-child {
+  margin-bottom: 0;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 6px;
+}
+
+.project-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #222;
+}
+
+.project-date {
+  font-size: 12px;
+  color: #aaa;
+  flex-shrink: 0;
+  margin-left: 12px;
+}
+
+.project-bullets {
+  list-style: none;
+  padding: 0;
+}
+
+.project-bullets li {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.8;
+  padding-left: 16px;
+  position: relative;
+}
+
+.project-bullets li::before {
+  content: '•';
+  position: absolute;
+  left: 4px;
+  color: #999;
+}
+
+/* =============================================
+   EDUCATION
+   ============================================= */
+.edu-row {
+  display: flex;
+  gap: 32px;
+  align-items: baseline;
+}
+
+.edu-date {
+  font-size: 13px;
+  color: #888;
+  flex-shrink: 0;
+  width: 100px;
+}
+
+.edu-content {
+  font-size: 14px;
+  color: #222;
+  font-weight: 500;
+}
+
+/* =============================================
+   AWARDS / CERTIFICATIONS
+   ============================================= */
+.award-row,
+.cert-row {
+  display: flex;
+  gap: 32px;
+  align-items: baseline;
+  margin-bottom: 8px;
+}
+
+.award-row:last-child,
+.cert-row:last-child {
+  margin-bottom: 0;
+}
+
+.award-date,
+.cert-date {
+  font-size: 13px;
+  color: #888;
+  flex-shrink: 0;
+  width: 100px;
+}
+
+.award-content,
+.cert-content {
+  font-size: 14px;
+  color: #222;
+}
+
+.cert-content strong {
+  font-weight: 600;
+}
+
+/* =============================================
+   RESPONSIVE
+   ============================================= */
+@media (max-width: 600px) {
+  .resume-card {
+    padding: 32px 24px 40px;
+  }
+
+  header.resume-header {
+    flex-direction: column-reverse;
+    gap: 16px;
+  }
+
+  .profile-photo {
+    margin-left: 0;
+    width: 64px;
+    height: 64px;
+  }
+
+  .header-left h1 {
+    font-size: 24px;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .skills-group {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .skills-label {
+    width: auto;
+  }
+
+  .exp-company-row,
+  .project-header {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .edu-row,
+  .award-row,
+  .cert-row {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .edu-date,
+  .award-date,
+  .cert-date {
+    width: auto;
+  }
+}
